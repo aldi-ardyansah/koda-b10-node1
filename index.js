@@ -33,13 +33,13 @@ const songs = [
     }
 ]
 
-function createMp3File() {
-    songs.map((song) => {
-        song.lists.map((list) => {
+function createFileMp3() {
+    songs.forEach((song) => {
+        song.lists.forEach((list) => {
             const filename = `${song.artist} - ${list}.mp3`;
             fs.writeFile(filename, "", function () {});
         });
     });
 }
 
-createMp3File();
+createFileMp3();
