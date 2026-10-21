@@ -33,9 +33,13 @@ const songs = [
     }
 ]
 
-for (let i = 0; i < songs.length; i++) {
-    for (let j = 0; j < songs[i].lists.length; j++) {
-        const filename = `${songs[i].artist} - ${songs[i].lists[j]}.mp3`;
-        fs.writeFile(filename, "", function () {});
+function createFileMp3() {
+    for (let i = 0; i < songs.length; i++) {
+        for (let j = 0; j < songs[i].lists.length; j++) {
+            const filename = `${songs[i].artist} - ${songs[i].lists[j]}.mp3`;
+            fs.writeFile(filename, "", function () {});
+        }
     }
 }
+
+createFileMp3();
