@@ -33,7 +33,7 @@ const songs = [
     }
 ]
 
-function createFileMp3() {
+function createMp3File() {
     songs.map((song) => {
         song.lists.map((list) => {
             const filename = `${song.artist} - ${list}.mp3`;
@@ -42,4 +42,4 @@ function createFileMp3() {
     });
 }
 
-createFileMp3();
+createMp3File();
