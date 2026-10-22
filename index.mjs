@@ -31,7 +31,7 @@ const songs = [
             "Only the Strong"
         ]
     }
-]
+];
 
 function createFileMp3() {
     songs.forEach((song) => {
