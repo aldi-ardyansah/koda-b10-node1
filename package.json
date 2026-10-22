@@ -1,15 +1,22 @@
 {
-  "name": "create-mp3-file",
+  "name": "koda-b10-node1",
   "version": "1.0.0",
-  "description": "This application creates mp3 files.",
+  "description": "Membuat File .mp3 Kosong dari Array of Object yang Berisi Artist dan Lists Judul Lagu.",
   "keywords": [
-    "mp3",
     "cli"
   ],
+  "homepage": "https://github.com/aldi-ardyansah/koda-b10-node1#readme",
+  "bugs": {
+    "url": "https://github.com/aldi-ardyansah/koda-b10-node1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldi-ardyansah/koda-b10-node1.git"
+  },
   "license": "MIT",
   "author": "aldi-ardyansah",
   "type": "module",
-  "main": "index.mjs",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.mjs",
@@ -18,7 +25,6 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@stylistic/eslint-plugin": "^5.10.0",
     "eslint": "^10.13.0",
     "globals": "^17.13.0"
   }
